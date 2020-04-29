@@ -1,0 +1,42 @@
+version: "3.6"
+
+networks:
+  jls-network:
+    driver: bridge
+
+services:
+  jls-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jls-api
+    restart: always
+    command: yarn dev
+    ports:
+      - "3333:3000"
+    volumes:
+      - .:/home/node/api
+    environment:
+      - MONGO_URL=jls-mongo
+    depends_on:
+      - jls-mongo
+    networks:
+      - jls-network
+    links:
+      - jls-mongo
+
+  jls-mongo:
+    image: bitnami/mongodb:latest
+    container_name: jls-mongo
+    restart: always
+    environment:
+      - ALLOW_EMPTY_PASSWORD=no
+      - MONGODB_USERNAME=root
+      - MONGODB_PASSWORD=root
+      - MONGODB_DATABASE=jls
+    networks:
+      - jls-network
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/db/mongo:/bitnami
