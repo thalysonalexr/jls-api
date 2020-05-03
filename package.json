@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "nodemon --exec sucrase-node src/server.js",
     "build": "sucrase ./src -d ./build --transforms imports",
-    "prestart": "yarn build",
     "start": "node build/server.js",
     "test": "cross-env NODE_ENV=test jest"
   },
