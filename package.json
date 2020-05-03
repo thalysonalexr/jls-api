@@ -8,6 +8,7 @@
     "start": "node src/server.js",
     "test": "cross-env NODE_ENV=test jest"
   },
+  "type": "module",
   "engines": {
     "node": ">=13.14.0",
     "yarn": ">=1.22.4",
