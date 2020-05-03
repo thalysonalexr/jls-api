@@ -12,7 +12,7 @@ class OrderController {
     const retailer = await _Retailer2.default.findById(order.retailer);
 
     retailer.phones.forEach(async phone => {
-      const { to, status } = await _SMS2.default.send(`Você tem um novo pedido de compra para ${data.customer.name} em ${data.customer.address.address}. Verifique os detalhes do pedido no sistema JLS - Jointly Logistics Service.`, '+12565408744', '+5567998553364');
+      const { to, status } = await _SMS2.default.send(`Você tem um novo pedido de compra para ${data.customer.name} em ${data.customer.address.address}. Verifique os detalhes do pedido no sistema JLS - Jointly Logistics Service.`, '+12565408744', phone);
 
       await _Notification2.default.create({ to, status })
     })

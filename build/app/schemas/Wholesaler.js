@@ -13,9 +13,9 @@ var _Status = require('./utils/Status'); var _Status2 = _interopRequireDefault(_
   image: String,
   products: [_Product2.default],
   status: [_Status2.default],
-  generalStatus: {
+  statusGeneral: {
     type: String,
-    enum: ['PENDENTE', 'A CAMINHO', 'ENTREGUE'],
+    enum: ['PENDENTE', 'A CAMINHO', 'ENTREGUE', 'CANCELADO'],
     default: 'PENDENTE'
   }
 }, { timestamps: true }); exports.WholesalerSchema = WholesalerSchema;

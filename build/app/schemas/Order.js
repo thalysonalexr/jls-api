@@ -18,7 +18,7 @@ const OrderSchema = new (0, _mongoose.Schema)({
   status: [_Status2.default],
   statusGeneral: {
     type: String,
-    enum: ['PENDENTE', 'A CAMINHO', 'ENTREGUE'],
+    enum: ['PENDENTE', 'A CAMINHO', 'ENTREGUE', 'CANCELADO'],
     default: 'PENDENTE',
   },
   subtotal: Number,

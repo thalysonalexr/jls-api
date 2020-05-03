@@ -13,23 +13,24 @@ class RetailerController {
     const { id } = req.params;
 
     const retailer = await _Retailer2.default.findById(id);
-    const orders = (await _Order2.default
-      .find()
-      .sort({ createdAt: -1 })).map(({
+    const orders = (await _Order2.default.find().sort({ createdAt: -1 })).map(
+      ({
         _id: order,
         createdAt: date,
         statusGeneral: status,
-        customer: { avatar } }) => {
+        customer: { avatar },
+      }) => {
         return {
           order,
           date,
           status,
-          avatar
-        }
-      });
-    
+          avatar,
+        };
+      }
+    );
+
     return res.status(200).json({ retailer, orders });
   }
 }
 
-exports. default = new RetailerController;
+exports. default = new RetailerController();
