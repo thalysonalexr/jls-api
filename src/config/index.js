@@ -1,4 +1,4 @@
-const { config } = require('dotenv');
+import { config } from 'dotenv';
 
 const env = {
   test: '.env.test',

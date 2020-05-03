@@ -4,12 +4,12 @@
   "description": "API do projeto Jointly Logistics Service",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon src/server.js",
+    "dev": "nodemon --exec sucrase-node src/server.js",
     "start": "node src/server.js",
     "test": "cross-env NODE_ENV=test jest"
   },
   "engines": {
-    "node": ">=12.16.1",
+    "node": ">=12.16.2",
     "yarn": ">=1.22.4",
     "npm": "6.14.4"
   },
@@ -32,13 +32,16 @@
   "author": "Thalyson Alexandre Rodrigues de Sousa <thalysonrodrigues.dev@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^3.22.0",
     "mongoose": "^5.9.10",
-    "morgan": "^1.10.0"
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "^1.10.0",
+    "twilio": "^3.43.0"
   },
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.1.5",
@@ -47,6 +50,7 @@
     "faker": "^4.1.0",
     "jest": "^25.5.0",
     "nodemon": "^2.0.3",
+    "sucrase": "^3.13.0",
     "supertest": "^4.0.2"
   }
 }
