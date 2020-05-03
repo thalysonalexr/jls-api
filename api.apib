@@ -13,8 +13,75 @@ API desenvolvida para prover o core do projeto JLS.
 ## Sobre [/]
 > Informações gerais sobre construção, documentação e utilização desta API.
 
+### Sobre esta documentação [GET]
+
 + Response 200 (application/json)
     + Attributes (Documentation)
+
+## Group Varejistas
+*Recurso de varejistas*
+
+## Retailers [/retailers]
+> Este endpoint representa a criação de dados de varejistas.
+
+### Criação de varejista [POST]
+
++ Request Criar um novo varejista
+
+    + Headers
+
+            Content-Type: application/json
+
+    + Attributes(RetailerInput)
+
++ Response 201
+    + Attributes(Retailer)
+
+## Retailers [/retailers/{id}/orders]
+> Este endpoint representa a seleção de dados de pedidos por varejista
+
+### Listar pedidos por varejista [GET]
+
++ Parameters
+    + id: `5eae3abf2ce350002116c924` (string, required) - Código identificador do varejista
+
++ Response 200
+    + Attributes(RetailerOrders)
+
+## Group Pedidos
+*Recurso de pedidos*
+
+## Orders [/orders]
+> Este endpoint representa a criação de dados de pedidos
+
+### Criação de pedidos [POST]
+
++ Request Criar um novo pedido
+
+    + Headers
+
+            Content-Type: application/json
+
+    + Attributes(OrderInput)
+
++ Response 201
+    + Attributes(Order)
+
+### Listar todos os pedidos [GET]
+
++ Response 200
+    + Attributes(OrderPaginate)
+
+## Orders [/orders/{id}]
+> Este endpoint representa a seleção de dados de pedidos pelo ID
+
+### Selecionar dados do pedido pelo ID [GET]
+
++ Parameters
+    + id: `5eae3abf2ce350002116c924` (string, required) - Código identificador do pedido
+
++ Response 200
+    + Attributes(Order)
 
 # Data Structures
 
@@ -23,3 +90,97 @@ API desenvolvida para prover o core do projeto JLS.
 + api: `JLS Jointly Logistics Service API` (string) - Nome da aplicação
 + docs: `https://github.com/thalysonalexr/jls-api#readme` (string) - Link para documentação principal
 + version: `v1` (string) - versão
+
+## Address (object)
+
++ address: `Rua Coronel Quirino, 1159-1053, Centro` (string) - Endereço por extenso
++ city: `Campinas` (string) - Cidade
++ uf: `SP` (string) - Estado
++ coordinates: `-22.898422`, `-47.052790` (array[number]) - Coordenadas geograficas de localização
+
+## RetailerInput (object)
+
++ cnpj: `05.427.581/0001-09` (string) - CNPJ ou MEI do varejista
++ fantasy: `Supermercado Divino Preço` (string) - Nome fantasia do varejo
++ email: `divinopreco@contato.com.br` (string) - E-mail comercial do varejo
++ phones: `+55 11 3375-9999`, `11 988867444` (array[string]) - números de telefone e celular comercial
++ userLogged (object) - Informações sobre o usuário logado no sistema
+    + name: `João Luiz Salazar` (string) - Nome do usuário
+    + email: `salazarlu_@yahoo.com` (string) - E-mail de usuário
+    + avatar: `https://jls-api.herokuapp.com/v1/files/joao.jpg` (string) - Avatar do usuário
++ address (Address) - Endereço do varejista
++ transport (object)
+    + type: `Motocicleta` (string) - Tipo do veículo de entrega
+    + plate: `BRA-0986` (string) - Placa do veículo de entrega
+
+## Retailer (RetailerInput)
+
++ _id: `5eae3a7b2ce350002116c8e7` (string) - ID do varejista
++ createdAt: `2020-05-03T03:28:59.528Z` (string) - Data de criação
++ updatedAt: `2020-05-03T03:28:59.528Z` (string) - Data de atualização
+
+## OrderResume (object)
+
++ order: `5eae3abf2ce350002116c924` (string) - ID do pedido
++ date: `2020-05-03T03:28:59.528Z` (string) - Data do pedido
++ status: `PENDENTE` (string) - Status do pedido
++ avatar: `https://jls-api.herokuapp.com/v1/files/melissa.jpg` (string) - Avatar do cliente
+
+## RetailerOrders (object)
+
++ retailer (Retailer)
++ orders (array[OrderResume])
+
+## Status
+
++ description: `Pedido realizado` (string) - Descrição do status
++ date: `02/04/2020 15:04` (string) - Data de atualização do status
+
+## Product
+
++ name: `Feijão Preto Turquez` (string) - Nome do produto
++ itens: `5` (number) - Quantidade de itens
++ price: `3.90` (number) - Preço do produto
+
+## Wholesaler (object)
+
++ cnpj: `04.427.581/0001-03` (string) - CNPJ do atacadista
++ fantasy: `Atacadão` (string) - Nome fantasia do atacadista
++ address (Address)
++ phones: `+55 11 3375-9999`, `11 988867444` (array[string]) - números de telefone e celular
++ email: `atacadao@contato.com.br` (string) - E-mail do atacadista
++ image: `https://jls-api.herokuapp.com/v1/files/atacadao.jpg` (string) - Imagem do atacadista
++ products (array[Product])
++ status (array[Status])
++ statusGeneral: `PENDENTE` (string) - Status geral sobre o pedido
+
+## OrderInput (object)
+
++ retailer: `5eae3abf2ce350002116c924` (string) - ID do varejista
++ customer (object)
+    + cpf: `048.199.102-77` (string) - CPF do cliente
+    + name: `Melissa Souza` (string) - Nome completo da cliente
+    + avatar: `https://jls-api.herokuapp.com/v1/files/melissa.jpg` (string) - Avatar da cliente
+    + address (Address) - Endereço da cliente
+    + phones: `+55 11 3375-9999`, `11 988867444` (array[string]) - números de telefone e celular
+    + email: `melissa@yahoo.com.br` (string) - E-mail do cliente
++ wholesalers (array[Wholesaler])
++ products (array[Product])
++ status (array[Status])
++ statusGeneral: `PENDENTE` (string) - Status geral sobre o pedido
+
+## Order (OrderInput)
+
++ _id: `5eae3a7b2ce350002116c8e7` (string) - ID do varejista
++ createdAt: `2020-05-03T03:28:59.528Z` (string) - Data de criação
++ updatedAt: `2020-05-03T03:28:59.528Z` (string) - Data de atualização
++ subtotal: `230.90` (number) - Valor total do pedido
+
+## OrderPaginate (object)
+
++ orders (object)
+    + docs (array[Order])
+    + total: `4` (number) - Total de pedidos
+    + limit: `10` (number) - Quantidade total exibida por página
+    + page: `1` (number) - Número da página atual
+    + pages: `1` (number) - Total de páginas

@@ -5,11 +5,12 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon --exec sucrase-node src/server.js",
-    "start": "node src/server.js",
+    "build": "sucrase ./src -d ./build --transforms imports",
+    "start": "node build/server.js",
     "test": "cross-env NODE_ENV=test jest"
   },
   "engines": {
-    "node": ">=12.16.2",
+    "node": ">=12.16.1",
     "yarn": ">=1.22.4",
     "npm": "6.14.4"
   },
@@ -45,6 +46,7 @@
   },
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.1.5",
+    "aglio": "^2.3.0",
     "cross-env": "^7.0.2",
     "factory-girl": "^5.0.4",
     "faker": "^4.1.0",

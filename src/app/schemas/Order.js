@@ -18,7 +18,7 @@ const OrderSchema = new Schema({
   status: [Status],
   statusGeneral: {
     type: String,
-    enum: ['PENDENTE', 'A CAMINHO', 'ENTREGUE'],
+    enum: ['PENDENTE', 'A CAMINHO', 'ENTREGUE', 'CANCELADO'],
     default: 'PENDENTE',
   },
   subtotal: Number,

@@ -13,9 +13,9 @@ export const WholesalerSchema = new Schema({
   image: String,
   products: [Product],
   status: [Status],
-  generalStatus: {
+  statusGeneral: {
     type: String,
-    enum: ['PENDENTE', 'A CAMINHO', 'ENTREGUE'],
+    enum: ['PENDENTE', 'A CAMINHO', 'ENTREGUE', 'CANCELADO'],
     default: 'PENDENTE'
   }
 }, { timestamps: true });
