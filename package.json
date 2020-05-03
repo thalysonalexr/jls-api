@@ -5,11 +5,13 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon --exec sucrase-node src/server.js",
-    "start": "node src/server.js",
+    "build": "sucrase ./src -d ./build --transforms imports",
+    "prestart": "yarn build",
+    "start": "node build/server.js",
     "test": "cross-env NODE_ENV=test jest"
   },
   "engines": {
-    "node": ">=12.16.2",
+    "node": ">=12.16.1",
     "yarn": ">=1.22.4",
     "npm": "6.14.4"
   },
