@@ -1,6 +1,9 @@
-const { Router } = require('express');
+import { Router } from 'express';
 
 const routes = Router();
+
+import OrderController from './app/controllers/OrderController';
+import RetailerController from './app/controllers/RetailerController';
 
 routes.get('/', (req, res) => {
   return res.json({
@@ -10,4 +13,11 @@ routes.get('/', (req, res) => {
   });
 });
 
-module.exports = routes;
+routes.post('/orders', OrderController.store);
+routes.get('/orders', OrderController.index);
+routes.get('/orders/:id', OrderController.details);
+
+routes.post('/retailers', RetailerController.store);
+routes.get('/retailers/:id/orders', RetailerController.showOrders);
+
+export default routes;

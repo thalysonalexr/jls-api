@@ -2,15 +2,16 @@ if (!process.env.NODE_ENV) {
   process.env.NODE_ENV = 'development';
 }
 
-require('./config');
-require('./services/Mongo');
+import './config';
+import './services/Mongo';
 
-const express = require('express');
-const cors = require('cors');
-const morgan = require('morgan');
-const helmet = require('helmet');
-const compression = require('compression');
-const routes = require('./routes');
+import cors from 'cors';
+import morgan from 'morgan';
+import helmet from 'helmet';
+import express from 'express';
+import compression from 'compression';
+import routes from './routes';
+import path from 'path';
 
 const app = express();
 
@@ -21,5 +22,6 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use(compression());
 app.use('/v1', routes);
+app.use('/v1/files', express.static(path.resolve(__dirname, '..', 'tmp', 'uploads')));
 
-module.exports = app;
+export default app;

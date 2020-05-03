@@ -72,7 +72,7 @@ typings/
 .env
 .env.*
 !.env.example
-/data
+/tmp/mongodb
 __tests__/coverage
 
 # parcel-bundler cache (https://parceljs.org/)

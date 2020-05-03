@@ -1,18 +1,24 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 class Mongo {
-  constructor() {
-    mongoose.connect(process.env.MONGO_STRING, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false,
-    }).then(() => {
-      console.log('Mongo database is connected.')
-    }).catch(err => {
-      console.log(err.message)
-    })
+  constructor(mongoose) {
+    this.instance = mongoose
+  }
+
+  async connect() {
+    try {
+      await this.instance.connect(process.env.MONGO_STRING, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: false,
+      })
+
+      console.log('[MongoDB] connected successfully.');
+    } catch (err) {
+      console.log(`[MongoDB] error: ${err.message}`);
+    }
   }
 }
 
-module.exports = new Mongo;
+export default new Mongo(mongoose).connect()
