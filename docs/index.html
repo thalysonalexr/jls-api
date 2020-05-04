@@ -290,6 +290,7 @@
       "<span class="hljs-attribute">order</span>": <span class="hljs-value"><span class="hljs-string">"5eae3abf2ce350002116c924"</span></span>,
       "<span class="hljs-attribute">date</span>": <span class="hljs-value"><span class="hljs-string">"2020-05-03T03:28:59.528Z"</span></span>,
       "<span class="hljs-attribute">status</span>": <span class="hljs-value"><span class="hljs-string">"PENDENTE"</span></span>,
+      "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Melissa Souza"</span></span>,
       "<span class="hljs-attribute">avatar</span>": <span class="hljs-value"><span class="hljs-string">"https://jls-api.herokuapp.com/v1/files/melissa.jpg"</span>
     </span>}
   ]
@@ -405,6 +406,10 @@
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
             "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Status do pedido"</span>
           </span>}</span>,
+          "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome do(a) cliente"</span>
+          </span>}</span>,
           "<span class="hljs-attribute">avatar</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
             "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Avatar do cliente"</span>
@@ -439,42 +444,33 @@
     ]</span>,
     "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"melissa@yahoo.com.br"</span>
   </span>}</span>,
-  "<span class="hljs-attribute">wholesalers</span>": <span class="hljs-value">[
+  "<span class="hljs-attribute">wholesaler</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value"><span class="hljs-string">"04.427.581/0001-03"</span></span>,
+    "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value"><span class="hljs-string">"Atacadão"</span></span>,
+    "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+      "<span class="hljs-attribute">address</span>": <span class="hljs-value"><span class="hljs-string">"Rua Coronel Quirino, 1159-1053, Centro"</span></span>,
+      "<span class="hljs-attribute">city</span>": <span class="hljs-value"><span class="hljs-string">"Campinas"</span></span>,
+      "<span class="hljs-attribute">uf</span>": <span class="hljs-value"><span class="hljs-string">"SP"</span></span>,
+      "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">[
+        -<span class="hljs-number">22.898422</span>,
+        -<span class="hljs-number">47.05279</span>
+      ]
+    </span>}</span>,
+    "<span class="hljs-attribute">phones</span>": <span class="hljs-value">[
+      <span class="hljs-string">"+55 11 3375-9999"</span>,
+      <span class="hljs-string">"11 988867444"</span>
+    ]</span>,
+    "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"atacadao@contato.com.br"</span></span>,
+    "<span class="hljs-attribute">image</span>": <span class="hljs-value"><span class="hljs-string">"https://jls-api.herokuapp.com/v1/files/atacadao.jpg"</span>
+  </span>}</span>,
+  "<span class="hljs-attribute">productsWholesaler</span>": <span class="hljs-value">[
     {
-      "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value"><span class="hljs-string">"04.427.581/0001-03"</span></span>,
-      "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value"><span class="hljs-string">"Atacadão"</span></span>,
-      "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
-        "<span class="hljs-attribute">address</span>": <span class="hljs-value"><span class="hljs-string">"Rua Coronel Quirino, 1159-1053, Centro"</span></span>,
-        "<span class="hljs-attribute">city</span>": <span class="hljs-value"><span class="hljs-string">"Campinas"</span></span>,
-        "<span class="hljs-attribute">uf</span>": <span class="hljs-value"><span class="hljs-string">"SP"</span></span>,
-        "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">[
-          -<span class="hljs-number">22.898422</span>,
-          -<span class="hljs-number">47.05279</span>
-        ]
-      </span>}</span>,
-      "<span class="hljs-attribute">phones</span>": <span class="hljs-value">[
-        <span class="hljs-string">"+55 11 3375-9999"</span>,
-        <span class="hljs-string">"11 988867444"</span>
-      ]</span>,
-      "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"atacadao@contato.com.br"</span></span>,
-      "<span class="hljs-attribute">image</span>": <span class="hljs-value"><span class="hljs-string">"https://jls-api.herokuapp.com/v1/files/atacadao.jpg"</span></span>,
-      "<span class="hljs-attribute">products</span>": <span class="hljs-value">[
-        {
-          "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
-          "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
-          "<span class="hljs-attribute">price</span>": <span class="hljs-value"><span class="hljs-number">3.9</span>
-        </span>}
-      ]</span>,
-      "<span class="hljs-attribute">status</span>": <span class="hljs-value">[
-        {
-          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Pedido realizado"</span></span>,
-          "<span class="hljs-attribute">date</span>": <span class="hljs-value"><span class="hljs-string">"02/04/2020 15:04"</span>
-        </span>}
-      ]</span>,
-      "<span class="hljs-attribute">statusGeneral</span>": <span class="hljs-value"><span class="hljs-string">"PENDENTE"</span>
+      "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
+      "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
+      "<span class="hljs-attribute">price</span>": <span class="hljs-value"><span class="hljs-number">3.9</span>
     </span>}
   ]</span>,
-  "<span class="hljs-attribute">products</span>": <span class="hljs-value">[
+  "<span class="hljs-attribute">productsRetailer</span>": <span class="hljs-value">[
     {
       "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
       "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
@@ -543,10 +539,56 @@
         </span>}
       </span>}
     </span>}</span>,
-    "<span class="hljs-attribute">wholesalers</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">wholesaler</span>": <span class="hljs-value">{
+      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+      "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"CNPJ do atacadista"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome fantasia do atacadista"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+          "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Endereço por extenso"</span>
+            </span>}</span>,
+            "<span class="hljs-attribute">city</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Cidade"</span>
+            </span>}</span>,
+            "<span class="hljs-attribute">uf</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Estado"</span>
+            </span>}</span>,
+            "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Coordenadas geograficas de localização"</span>
+            </span>}
+          </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">phones</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"números de telefone e celular"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">email</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"E-mail do atacadista"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">image</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Imagem do atacadista"</span>
+        </span>}
+      </span>}
+    </span>}</span>,
+    "<span class="hljs-attribute">productsWholesaler</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span>
     </span>}</span>,
-    "<span class="hljs-attribute">products</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">productsRetailer</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span>
     </span>}</span>,
     "<span class="hljs-attribute">status</span>": <span class="hljs-value">{
@@ -578,42 +620,33 @@
     ]</span>,
     "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"melissa@yahoo.com.br"</span>
   </span>}</span>,
-  "<span class="hljs-attribute">wholesalers</span>": <span class="hljs-value">[
+  "<span class="hljs-attribute">wholesaler</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value"><span class="hljs-string">"04.427.581/0001-03"</span></span>,
+    "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value"><span class="hljs-string">"Atacadão"</span></span>,
+    "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+      "<span class="hljs-attribute">address</span>": <span class="hljs-value"><span class="hljs-string">"Rua Coronel Quirino, 1159-1053, Centro"</span></span>,
+      "<span class="hljs-attribute">city</span>": <span class="hljs-value"><span class="hljs-string">"Campinas"</span></span>,
+      "<span class="hljs-attribute">uf</span>": <span class="hljs-value"><span class="hljs-string">"SP"</span></span>,
+      "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">[
+        -<span class="hljs-number">22.898422</span>,
+        -<span class="hljs-number">47.05279</span>
+      ]
+    </span>}</span>,
+    "<span class="hljs-attribute">phones</span>": <span class="hljs-value">[
+      <span class="hljs-string">"+55 11 3375-9999"</span>,
+      <span class="hljs-string">"11 988867444"</span>
+    ]</span>,
+    "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"atacadao@contato.com.br"</span></span>,
+    "<span class="hljs-attribute">image</span>": <span class="hljs-value"><span class="hljs-string">"https://jls-api.herokuapp.com/v1/files/atacadao.jpg"</span>
+  </span>}</span>,
+  "<span class="hljs-attribute">productsWholesaler</span>": <span class="hljs-value">[
     {
-      "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value"><span class="hljs-string">"04.427.581/0001-03"</span></span>,
-      "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value"><span class="hljs-string">"Atacadão"</span></span>,
-      "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
-        "<span class="hljs-attribute">address</span>": <span class="hljs-value"><span class="hljs-string">"Rua Coronel Quirino, 1159-1053, Centro"</span></span>,
-        "<span class="hljs-attribute">city</span>": <span class="hljs-value"><span class="hljs-string">"Campinas"</span></span>,
-        "<span class="hljs-attribute">uf</span>": <span class="hljs-value"><span class="hljs-string">"SP"</span></span>,
-        "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">[
-          -<span class="hljs-number">22.898422</span>,
-          -<span class="hljs-number">47.05279</span>
-        ]
-      </span>}</span>,
-      "<span class="hljs-attribute">phones</span>": <span class="hljs-value">[
-        <span class="hljs-string">"+55 11 3375-9999"</span>,
-        <span class="hljs-string">"11 988867444"</span>
-      ]</span>,
-      "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"atacadao@contato.com.br"</span></span>,
-      "<span class="hljs-attribute">image</span>": <span class="hljs-value"><span class="hljs-string">"https://jls-api.herokuapp.com/v1/files/atacadao.jpg"</span></span>,
-      "<span class="hljs-attribute">products</span>": <span class="hljs-value">[
-        {
-          "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
-          "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
-          "<span class="hljs-attribute">price</span>": <span class="hljs-value"><span class="hljs-number">3.9</span>
-        </span>}
-      ]</span>,
-      "<span class="hljs-attribute">status</span>": <span class="hljs-value">[
-        {
-          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Pedido realizado"</span></span>,
-          "<span class="hljs-attribute">date</span>": <span class="hljs-value"><span class="hljs-string">"02/04/2020 15:04"</span>
-        </span>}
-      ]</span>,
-      "<span class="hljs-attribute">statusGeneral</span>": <span class="hljs-value"><span class="hljs-string">"PENDENTE"</span>
+      "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
+      "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
+      "<span class="hljs-attribute">price</span>": <span class="hljs-value"><span class="hljs-number">3.9</span>
     </span>}
   ]</span>,
-  "<span class="hljs-attribute">products</span>": <span class="hljs-value">[
+  "<span class="hljs-attribute">productsRetailer</span>": <span class="hljs-value">[
     {
       "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
       "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
@@ -691,102 +724,79 @@
         </span>}
       </span>}
     </span>}</span>,
-    "<span class="hljs-attribute">wholesalers</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">wholesaler</span>": <span class="hljs-value">{
+      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+      "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"CNPJ do atacadista"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome fantasia do atacadista"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+          "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Endereço por extenso"</span>
+            </span>}</span>,
+            "<span class="hljs-attribute">city</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Cidade"</span>
+            </span>}</span>,
+            "<span class="hljs-attribute">uf</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Estado"</span>
+            </span>}</span>,
+            "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+              "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span>
+              </span>}</span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Coordenadas geograficas de localização"</span>
+            </span>}
+          </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">phones</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+          "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          </span>}</span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"números de telefone e celular"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">email</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"E-mail do atacadista"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">image</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Imagem do atacadista"</span>
+        </span>}
+      </span>}
+    </span>}</span>,
+    "<span class="hljs-attribute">productsWholesaler</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
       "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
         "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"CNPJ do atacadista"</span>
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome do produto"</span>
           </span>}</span>,
-          "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome fantasia do atacadista"</span>
+          "<span class="hljs-attribute">itens</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Quantidade de itens"</span>
           </span>}</span>,
-          "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-            "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-              "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Endereço por extenso"</span>
-              </span>}</span>,
-              "<span class="hljs-attribute">city</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Cidade"</span>
-              </span>}</span>,
-              "<span class="hljs-attribute">uf</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Estado"</span>
-              </span>}</span>,
-              "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-                "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span>
-                </span>}</span>,
-                "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Coordenadas geograficas de localização"</span>
-              </span>}
-            </span>}
-          </span>}</span>,
-          "<span class="hljs-attribute">phones</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
-            </span>}</span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"números de telefone e celular"</span>
-          </span>}</span>,
-          "<span class="hljs-attribute">email</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"E-mail do atacadista"</span>
-          </span>}</span>,
-          "<span class="hljs-attribute">image</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Imagem do atacadista"</span>
-          </span>}</span>,
-          "<span class="hljs-attribute">products</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-              "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome do produto"</span>
-                </span>}</span>,
-                "<span class="hljs-attribute">itens</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
-                  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Quantidade de itens"</span>
-                </span>}</span>,
-                "<span class="hljs-attribute">price</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
-                  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Preço do produto"</span>
-                </span>}
-              </span>}
-            </span>}
-          </span>}</span>,
-          "<span class="hljs-attribute">status</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-              "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">description</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Descrição do status"</span>
-                </span>}</span>,
-                "<span class="hljs-attribute">date</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Data de atualização do status"</span>
-                </span>}
-              </span>}
-            </span>}
-          </span>}</span>,
-          "<span class="hljs-attribute">statusGeneral</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Status geral sobre o pedido"</span>
+          "<span class="hljs-attribute">price</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Preço do produto"</span>
           </span>}
         </span>}
       </span>}
     </span>}</span>,
-    "<span class="hljs-attribute">products</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">productsRetailer</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
       "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
@@ -868,42 +878,33 @@
           ]</span>,
           "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"melissa@yahoo.com.br"</span>
         </span>}</span>,
-        "<span class="hljs-attribute">wholesalers</span>": <span class="hljs-value">[
+        "<span class="hljs-attribute">wholesaler</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value"><span class="hljs-string">"04.427.581/0001-03"</span></span>,
+          "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value"><span class="hljs-string">"Atacadão"</span></span>,
+          "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">address</span>": <span class="hljs-value"><span class="hljs-string">"Rua Coronel Quirino, 1159-1053, Centro"</span></span>,
+            "<span class="hljs-attribute">city</span>": <span class="hljs-value"><span class="hljs-string">"Campinas"</span></span>,
+            "<span class="hljs-attribute">uf</span>": <span class="hljs-value"><span class="hljs-string">"SP"</span></span>,
+            "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">[
+              -<span class="hljs-number">22.898422</span>,
+              -<span class="hljs-number">47.05279</span>
+            ]
+          </span>}</span>,
+          "<span class="hljs-attribute">phones</span>": <span class="hljs-value">[
+            <span class="hljs-string">"+55 11 3375-9999"</span>,
+            <span class="hljs-string">"11 988867444"</span>
+          ]</span>,
+          "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"atacadao@contato.com.br"</span></span>,
+          "<span class="hljs-attribute">image</span>": <span class="hljs-value"><span class="hljs-string">"https://jls-api.herokuapp.com/v1/files/atacadao.jpg"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">productsWholesaler</span>": <span class="hljs-value">[
           {
-            "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value"><span class="hljs-string">"04.427.581/0001-03"</span></span>,
-            "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value"><span class="hljs-string">"Atacadão"</span></span>,
-            "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
-              "<span class="hljs-attribute">address</span>": <span class="hljs-value"><span class="hljs-string">"Rua Coronel Quirino, 1159-1053, Centro"</span></span>,
-              "<span class="hljs-attribute">city</span>": <span class="hljs-value"><span class="hljs-string">"Campinas"</span></span>,
-              "<span class="hljs-attribute">uf</span>": <span class="hljs-value"><span class="hljs-string">"SP"</span></span>,
-              "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">[
-                -<span class="hljs-number">22.898422</span>,
-                -<span class="hljs-number">47.05279</span>
-              ]
-            </span>}</span>,
-            "<span class="hljs-attribute">phones</span>": <span class="hljs-value">[
-              <span class="hljs-string">"+55 11 3375-9999"</span>,
-              <span class="hljs-string">"11 988867444"</span>
-            ]</span>,
-            "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"atacadao@contato.com.br"</span></span>,
-            "<span class="hljs-attribute">image</span>": <span class="hljs-value"><span class="hljs-string">"https://jls-api.herokuapp.com/v1/files/atacadao.jpg"</span></span>,
-            "<span class="hljs-attribute">products</span>": <span class="hljs-value">[
-              {
-                "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
-                "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
-                "<span class="hljs-attribute">price</span>": <span class="hljs-value"><span class="hljs-number">3.9</span>
-              </span>}
-            ]</span>,
-            "<span class="hljs-attribute">status</span>": <span class="hljs-value">[
-              {
-                "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Pedido realizado"</span></span>,
-                "<span class="hljs-attribute">date</span>": <span class="hljs-value"><span class="hljs-string">"02/04/2020 15:04"</span>
-              </span>}
-            ]</span>,
-            "<span class="hljs-attribute">statusGeneral</span>": <span class="hljs-value"><span class="hljs-string">"PENDENTE"</span>
+            "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
+            "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
+            "<span class="hljs-attribute">price</span>": <span class="hljs-value"><span class="hljs-number">3.9</span>
           </span>}
         ]</span>,
-        "<span class="hljs-attribute">products</span>": <span class="hljs-value">[
+        "<span class="hljs-attribute">productsRetailer</span>": <span class="hljs-value">[
           {
             "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
             "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
@@ -996,102 +997,79 @@
                   </span>}
                 </span>}
               </span>}</span>,
-              "<span class="hljs-attribute">wholesalers</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">wholesaler</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                  "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"CNPJ do atacadista"</span>
+                  </span>}</span>,
+                  "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome fantasia do atacadista"</span>
+                  </span>}</span>,
+                  "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+                    "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+                      "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Endereço por extenso"</span>
+                      </span>}</span>,
+                      "<span class="hljs-attribute">city</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Cidade"</span>
+                      </span>}</span>,
+                      "<span class="hljs-attribute">uf</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Estado"</span>
+                      </span>}</span>,
+                      "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">{
+                        "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                        "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span>
+                        </span>}</span>,
+                        "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Coordenadas geograficas de localização"</span>
+                      </span>}
+                    </span>}
+                  </span>}</span>,
+                  "<span class="hljs-attribute">phones</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+                    "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+                    </span>}</span>,
+                    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"números de telefone e celular"</span>
+                  </span>}</span>,
+                  "<span class="hljs-attribute">email</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"E-mail do atacadista"</span>
+                  </span>}</span>,
+                  "<span class="hljs-attribute">image</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+                    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Imagem do atacadista"</span>
+                  </span>}
+                </span>}
+              </span>}</span>,
+              "<span class="hljs-attribute">productsWholesaler</span>": <span class="hljs-value">{
                 "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
                 "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
                   "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
                   "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-                    "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value">{
+                    "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
                       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                      "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"CNPJ do atacadista"</span>
+                      "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome do produto"</span>
                     </span>}</span>,
-                    "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value">{
-                      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                      "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome fantasia do atacadista"</span>
+                    "<span class="hljs-attribute">itens</span>": <span class="hljs-value">{
+                      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                      "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Quantidade de itens"</span>
                     </span>}</span>,
-                    "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
-                      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-                      "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-                        "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
-                          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Endereço por extenso"</span>
-                        </span>}</span>,
-                        "<span class="hljs-attribute">city</span>": <span class="hljs-value">{
-                          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Cidade"</span>
-                        </span>}</span>,
-                        "<span class="hljs-attribute">uf</span>": <span class="hljs-value">{
-                          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Estado"</span>
-                        </span>}</span>,
-                        "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">{
-                          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-                          "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-                            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span>
-                          </span>}</span>,
-                          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Coordenadas geograficas de localização"</span>
-                        </span>}
-                      </span>}
-                    </span>}</span>,
-                    "<span class="hljs-attribute">phones</span>": <span class="hljs-value">{
-                      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-                      "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-                        "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
-                      </span>}</span>,
-                      "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"números de telefone e celular"</span>
-                    </span>}</span>,
-                    "<span class="hljs-attribute">email</span>": <span class="hljs-value">{
-                      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                      "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"E-mail do atacadista"</span>
-                    </span>}</span>,
-                    "<span class="hljs-attribute">image</span>": <span class="hljs-value">{
-                      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                      "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Imagem do atacadista"</span>
-                    </span>}</span>,
-                    "<span class="hljs-attribute">products</span>": <span class="hljs-value">{
-                      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-                      "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-                        "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-                        "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-                          "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
-                            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome do produto"</span>
-                          </span>}</span>,
-                          "<span class="hljs-attribute">itens</span>": <span class="hljs-value">{
-                            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
-                            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Quantidade de itens"</span>
-                          </span>}</span>,
-                          "<span class="hljs-attribute">price</span>": <span class="hljs-value">{
-                            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
-                            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Preço do produto"</span>
-                          </span>}
-                        </span>}
-                      </span>}
-                    </span>}</span>,
-                    "<span class="hljs-attribute">status</span>": <span class="hljs-value">{
-                      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-                      "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-                        "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-                        "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-                          "<span class="hljs-attribute">description</span>": <span class="hljs-value">{
-                            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Descrição do status"</span>
-                          </span>}</span>,
-                          "<span class="hljs-attribute">date</span>": <span class="hljs-value">{
-                            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Data de atualização do status"</span>
-                          </span>}
-                        </span>}
-                      </span>}
-                    </span>}</span>,
-                    "<span class="hljs-attribute">statusGeneral</span>": <span class="hljs-value">{
-                      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                      "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Status geral sobre o pedido"</span>
+                    "<span class="hljs-attribute">price</span>": <span class="hljs-value">{
+                      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+                      "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Preço do produto"</span>
                     </span>}
                   </span>}
                 </span>}
               </span>}</span>,
-              "<span class="hljs-attribute">products</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">productsRetailer</span>": <span class="hljs-value">{
                 "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
                 "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
                   "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
@@ -1195,42 +1173,33 @@
     ]</span>,
     "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"melissa@yahoo.com.br"</span>
   </span>}</span>,
-  "<span class="hljs-attribute">wholesalers</span>": <span class="hljs-value">[
+  "<span class="hljs-attribute">wholesaler</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value"><span class="hljs-string">"04.427.581/0001-03"</span></span>,
+    "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value"><span class="hljs-string">"Atacadão"</span></span>,
+    "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+      "<span class="hljs-attribute">address</span>": <span class="hljs-value"><span class="hljs-string">"Rua Coronel Quirino, 1159-1053, Centro"</span></span>,
+      "<span class="hljs-attribute">city</span>": <span class="hljs-value"><span class="hljs-string">"Campinas"</span></span>,
+      "<span class="hljs-attribute">uf</span>": <span class="hljs-value"><span class="hljs-string">"SP"</span></span>,
+      "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">[
+        -<span class="hljs-number">22.898422</span>,
+        -<span class="hljs-number">47.05279</span>
+      ]
+    </span>}</span>,
+    "<span class="hljs-attribute">phones</span>": <span class="hljs-value">[
+      <span class="hljs-string">"+55 11 3375-9999"</span>,
+      <span class="hljs-string">"11 988867444"</span>
+    ]</span>,
+    "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"atacadao@contato.com.br"</span></span>,
+    "<span class="hljs-attribute">image</span>": <span class="hljs-value"><span class="hljs-string">"https://jls-api.herokuapp.com/v1/files/atacadao.jpg"</span>
+  </span>}</span>,
+  "<span class="hljs-attribute">productsWholesaler</span>": <span class="hljs-value">[
     {
-      "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value"><span class="hljs-string">"04.427.581/0001-03"</span></span>,
-      "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value"><span class="hljs-string">"Atacadão"</span></span>,
-      "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
-        "<span class="hljs-attribute">address</span>": <span class="hljs-value"><span class="hljs-string">"Rua Coronel Quirino, 1159-1053, Centro"</span></span>,
-        "<span class="hljs-attribute">city</span>": <span class="hljs-value"><span class="hljs-string">"Campinas"</span></span>,
-        "<span class="hljs-attribute">uf</span>": <span class="hljs-value"><span class="hljs-string">"SP"</span></span>,
-        "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">[
-          -<span class="hljs-number">22.898422</span>,
-          -<span class="hljs-number">47.05279</span>
-        ]
-      </span>}</span>,
-      "<span class="hljs-attribute">phones</span>": <span class="hljs-value">[
-        <span class="hljs-string">"+55 11 3375-9999"</span>,
-        <span class="hljs-string">"11 988867444"</span>
-      ]</span>,
-      "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"atacadao@contato.com.br"</span></span>,
-      "<span class="hljs-attribute">image</span>": <span class="hljs-value"><span class="hljs-string">"https://jls-api.herokuapp.com/v1/files/atacadao.jpg"</span></span>,
-      "<span class="hljs-attribute">products</span>": <span class="hljs-value">[
-        {
-          "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
-          "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
-          "<span class="hljs-attribute">price</span>": <span class="hljs-value"><span class="hljs-number">3.9</span>
-        </span>}
-      ]</span>,
-      "<span class="hljs-attribute">status</span>": <span class="hljs-value">[
-        {
-          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Pedido realizado"</span></span>,
-          "<span class="hljs-attribute">date</span>": <span class="hljs-value"><span class="hljs-string">"02/04/2020 15:04"</span>
-        </span>}
-      ]</span>,
-      "<span class="hljs-attribute">statusGeneral</span>": <span class="hljs-value"><span class="hljs-string">"PENDENTE"</span>
+      "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
+      "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
+      "<span class="hljs-attribute">price</span>": <span class="hljs-value"><span class="hljs-number">3.9</span>
     </span>}
   ]</span>,
-  "<span class="hljs-attribute">products</span>": <span class="hljs-value">[
+  "<span class="hljs-attribute">productsRetailer</span>": <span class="hljs-value">[
     {
       "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Feijão Preto Turquez"</span></span>,
       "<span class="hljs-attribute">itens</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
@@ -1308,102 +1277,79 @@
         </span>}
       </span>}
     </span>}</span>,
-    "<span class="hljs-attribute">wholesalers</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">wholesaler</span>": <span class="hljs-value">{
+      "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+      "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+        "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"CNPJ do atacadista"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome fantasia do atacadista"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
+          "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Endereço por extenso"</span>
+            </span>}</span>,
+            "<span class="hljs-attribute">city</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Cidade"</span>
+            </span>}</span>,
+            "<span class="hljs-attribute">uf</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Estado"</span>
+            </span>}</span>,
+            "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">{
+              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+              "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span>
+              </span>}</span>,
+              "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Coordenadas geograficas de localização"</span>
+            </span>}
+          </span>}
+        </span>}</span>,
+        "<span class="hljs-attribute">phones</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
+          "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
+          </span>}</span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"números de telefone e celular"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">email</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"E-mail do atacadista"</span>
+        </span>}</span>,
+        "<span class="hljs-attribute">image</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
+          "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Imagem do atacadista"</span>
+        </span>}
+      </span>}
+    </span>}</span>,
+    "<span class="hljs-attribute">productsWholesaler</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
       "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
         "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-          "<span class="hljs-attribute">cnpj</span>": <span class="hljs-value">{
+          "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
             "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"CNPJ do atacadista"</span>
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome do produto"</span>
           </span>}</span>,
-          "<span class="hljs-attribute">fantasy</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome fantasia do atacadista"</span>
+          "<span class="hljs-attribute">itens</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Quantidade de itens"</span>
           </span>}</span>,
-          "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-            "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-              "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Endereço por extenso"</span>
-              </span>}</span>,
-              "<span class="hljs-attribute">city</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Cidade"</span>
-              </span>}</span>,
-              "<span class="hljs-attribute">uf</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Estado"</span>
-              </span>}</span>,
-              "<span class="hljs-attribute">coordinates</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-                "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span>
-                </span>}</span>,
-                "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Coordenadas geograficas de localização"</span>
-              </span>}
-            </span>}
-          </span>}</span>,
-          "<span class="hljs-attribute">phones</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
-            </span>}</span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"números de telefone e celular"</span>
-          </span>}</span>,
-          "<span class="hljs-attribute">email</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"E-mail do atacadista"</span>
-          </span>}</span>,
-          "<span class="hljs-attribute">image</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Imagem do atacadista"</span>
-          </span>}</span>,
-          "<span class="hljs-attribute">products</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-              "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">name</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Nome do produto"</span>
-                </span>}</span>,
-                "<span class="hljs-attribute">itens</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
-                  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Quantidade de itens"</span>
-                </span>}</span>,
-                "<span class="hljs-attribute">price</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
-                  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Preço do produto"</span>
-                </span>}
-              </span>}
-            </span>}
-          </span>}</span>,
-          "<span class="hljs-attribute">status</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
-            "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
-              "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,
-              "<span class="hljs-attribute">properties</span>": <span class="hljs-value">{
-                "<span class="hljs-attribute">description</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Descrição do status"</span>
-                </span>}</span>,
-                "<span class="hljs-attribute">date</span>": <span class="hljs-value">{
-                  "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-                  "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Data de atualização do status"</span>
-                </span>}
-              </span>}
-            </span>}
-          </span>}</span>,
-          "<span class="hljs-attribute">statusGeneral</span>": <span class="hljs-value">{
-            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span></span>,
-            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Status geral sobre o pedido"</span>
+          "<span class="hljs-attribute">price</span>": <span class="hljs-value">{
+            "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"number"</span></span>,
+            "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"Preço do produto"</span>
           </span>}
         </span>}
       </span>}
     </span>}</span>,
-    "<span class="hljs-attribute">products</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">productsRetailer</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"array"</span></span>,
       "<span class="hljs-attribute">items</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"object"</span></span>,

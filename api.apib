@@ -124,6 +124,7 @@ API desenvolvida para prover o core do projeto JLS.
 + order: `5eae3abf2ce350002116c924` (string) - ID do pedido
 + date: `2020-05-03T03:28:59.528Z` (string) - Data do pedido
 + status: `PENDENTE` (string) - Status do pedido
++ name: `Melissa Souza` (string) - Nome do(a) cliente
 + avatar: `https://jls-api.herokuapp.com/v1/files/melissa.jpg` (string) - Avatar do cliente
 
 ## RetailerOrders (object)
@@ -150,9 +151,6 @@ API desenvolvida para prover o core do projeto JLS.
 + phones: `+55 11 3375-9999`, `11 988867444` (array[string]) - números de telefone e celular
 + email: `atacadao@contato.com.br` (string) - E-mail do atacadista
 + image: `https://jls-api.herokuapp.com/v1/files/atacadao.jpg` (string) - Imagem do atacadista
-+ products (array[Product])
-+ status (array[Status])
-+ statusGeneral: `PENDENTE` (string) - Status geral sobre o pedido
 
 ## OrderInput (object)
 
@@ -164,8 +162,9 @@ API desenvolvida para prover o core do projeto JLS.
     + address (Address) - Endereço da cliente
     + phones: `+55 11 3375-9999`, `11 988867444` (array[string]) - números de telefone e celular
     + email: `melissa@yahoo.com.br` (string) - E-mail do cliente
-+ wholesalers (array[Wholesaler])
-+ products (array[Product])
++ wholesaler (Wholesaler)
++ productsWholesaler (array[Product])
++ productsRetailer (array[Product])
 + status (array[Status])
 + statusGeneral: `PENDENTE` (string) - Status geral sobre o pedido
 

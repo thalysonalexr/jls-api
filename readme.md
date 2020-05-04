@@ -18,33 +18,30 @@ Serviço de logística para garantir distribuição e reposição de estoque de 
 
 ## Fluxo geral da logística
 
-1. O cliente visualiza produtos que são disponibilizados por um atacadista;
-  1.1. os produtos estão disponíveis para o cliente também através do cruzamento de estoques
-      entre varejista e atacadista dando prioridade aos produtos do varejista;
-  **problemas:**
-    1. como definir os preços dos produtos? (atacadista ou varejista local?);
-  **possiveis soluções:**
-    1. realizar parceria entre varejista local e atacadista definindo preço de produtos;
+- 1. O cliente visualiza produtos que são disponibilizados por um atacadista;
+  - 1.1. os produtos estão disponíveis para o cliente também através do cruzamento de estoques entre varejista e atacadista dando prioridade aos produtos do varejista;
+  - **problemas:**1. como definir os preços dos produtos? (atacadista ou varejista local?);
+  - **possiveis soluções:**1. realizar parceria entre varejista local e atacadista definindo preço de produtos;
 
-2. Seleciona os produtos e emite o pedido de compra;
+- 2. Seleciona os produtos e emite o pedido de compra;
 
-3. O sistema faz um cruzamento de estoque do atacadista com do varejista;
-  3.1. dois pedidos são emitidos, um para o varejista e outra ao atacadista;
-    3.1.1. o pedido é confirmado com o varejista sobre os produtos, caso não tenha
-           é acrescentado no pedido do atacadista;
-  3.2. ao atacadista é enviado (informações dos produtos) apenas o que foi solicitado a ele;
-  3.3. ao varejista é enviado o pedido total, o que ele deve complementar e o que
-       deve esperar da atacadista
+- 3. O sistema faz um cruzamento de estoque do atacadista com do varejista;
 
-4. O pedido é notificado para o varejista e atacadista para separarem os produtos;
-  4.1. O atacadista separa e envia os produtos ao varejista;
-  4.2. O varejista separa e aguarda os produtos da atacadista;
+  - 3.1. dois pedidos são emitidos, um para o varejista e outra ao atacadista;
+    - 3.1.1. o pedido é confirmado com o varejista sobre os produtos, caso não tenha é acrescentado no pedido do atacadista;
+  
+  - 3.2. ao atacadista é enviado (informações dos produtos) apenas o que foi solicitado a ele;
+  - 3.3. ao varejista é enviado o pedido total, o que ele deve complementar e o que deve esperar da atacadista;
 
-5. O atacadista envia os produtos para o varejista;
+- 4. O pedido é notificado para o varejista e atacadista para separarem os produtos;
+  - 4.1. O atacadista separa e envia os produtos ao varejista;
+  - 4.2. O varejista separa e aguarda os produtos da atacadista;
 
-6. O varejista complementa os produtos da atacadista com seus produtos;
+- 5. O atacadista envia os produtos para o varejista;
 
-7. O varejista entrega o pedido ao consumidor/cliente;
+- 6. O varejista complementa os produtos da atacadista com seus produtos;
+
+- 7. O varejista entrega o pedido ao consumidor/cliente;
 
 ## Fluxo de aplicação MVP
 
@@ -54,7 +51,7 @@ O fluxo da aplicação MVP é direcionado ao varejista, desta maneira abrange os
 
 > Tela de perfil do varejista
 
-Detém das informações sobre pedidos de clientes, onde os produtos solicitados já foram cruzados com o estoque da atacadista, desta maneira o pedido contém as informações: usuário do varejo, pedidos recebidos e status do mesmo.
+Detém das informações sobre pedidos de clientes, onde os produtos solicitados já foram cruzados com o estoque da atacadista, desta maneira a tela contém as informações: usuário do varejo, pedidos recebidos e status do mesmo.
 
 > Tela de detalhes do pedido
 
