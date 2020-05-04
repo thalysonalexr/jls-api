@@ -13,8 +13,9 @@ const OrderSchema = new Schema({
     ref: 'Retailer'
   },
   customer: CustomerSchema,
-  wholesalers: [WholesalerSchema],
-  products: [Product],
+  wholesaler: WholesalerSchema,
+  productsWholesaler: [Product],
+  productsRetailer: [Product],
   status: [Status],
   statusGeneral: {
     type: String,
@@ -29,13 +30,11 @@ OrderSchema.plugin(mongoosePaginate);
 OrderSchema.pre('save', function(next) {
   this.subtotal = 0;
 
-  this.wholesalers.forEach(wholesaler => {
-    wholesaler.products.forEach(product => {
-      this.subtotal += (product.price * product.itens)
-    })
-  });
+  this.productsWholesaler.forEach(product => {
+    this.subtotal += (product.price * product.itens)
+  })
 
-  this.products.forEach(product => {
+  this.productsRetailer.forEach(product => {
     this.subtotal += (product.price * product.itens)
   })
 

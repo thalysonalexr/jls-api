@@ -18,12 +18,13 @@ class RetailerController {
         _id: order,
         createdAt: date,
         statusGeneral: status,
-        customer: { avatar },
+        customer: { name, avatar },
       }) => {
         return {
           order,
           date,
           status,
+          name,
           avatar,
         };
       }

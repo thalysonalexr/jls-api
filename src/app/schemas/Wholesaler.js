@@ -1,8 +1,6 @@
 import { Schema, model } from 'mongoose';
 
 import Address from './utils/Address';
-import Product from './utils/Product';
-import Status from './utils/Status';
 
 export const WholesalerSchema = new Schema({
   cnpj: String,
@@ -10,14 +8,7 @@ export const WholesalerSchema = new Schema({
   address: Address,
   phones: [String],
   email: String,
-  image: String,
-  products: [Product],
-  status: [Status],
-  statusGeneral: {
-    type: String,
-    enum: ['PENDENTE', 'A CAMINHO', 'ENTREGUE', 'CANCELADO'],
-    default: 'PENDENTE'
-  }
+  image: String,  
 }, { timestamps: true });
 
 export default model('Wholesaler', WholesalerSchema);
