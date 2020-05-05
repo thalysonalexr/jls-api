@@ -81,8 +81,8 @@ Nesta tela o varejista poderá verificar os produtos do atacadista no pedido e a
         <sub>Dev. backend</sub>
       </a>
     </td>
-    <td align="https://www.linkedin.com/in/jo%C3%A3o-kleber-g-448481bb/">
-      <a href="">
+    <td align="center">
+      <a href="https://www.linkedin.com/in/jo%C3%A3o-kleber-g-448481bb/">
         <img src="./docs/collaborators/joao.jpeg" width="100px;" alt="Izabella Melo"/>
         <br/>
         <sub><b>João Kléber</b></sub><br>
