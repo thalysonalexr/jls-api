@@ -1,0 +1,68 @@
+{
+	"retailer": "5eaf8a12ea535a00211dbe20",
+	"customer": {
+		"cpf": "048.199.102-77",
+		"name": "Melissa Souza",
+		"avatar": "https://jls-api.herokuapp.com/v1/files/melissa.jpg",
+		"address": {
+			"address": "Rua Alfredo Laiaff, 19 - Centro 69000-000",
+			"city": "Campinas",
+			"uf": "SP",
+			"coordinates": [-23.5475000, -46.6361100]
+		},
+		"phones": ["11 99999-8888", "+55 11 3322-1124"],
+		"email": "souza.mel_@yahoo.com.br"
+	},
+	"wholesaler": {
+			"cnpj": "04.427.581/0001-03",
+			"fantasy": "Atacadão",
+			"address": {
+				"address": "Av. Marcelo Miranda, 1456 - Vila Anhandui 69003-001",
+				"city": "Campinas",
+				"uf": "SP"
+			},
+			"phones": ["11 9 9899-0012", "+55 11 3245-1124"],
+			"email": "atacadao@contato.com.br",
+			"image": "https://jls-api.herokuapp.com/v1/files/atacadao.jpg"
+		},
+	"productsWholesaler": [
+		{
+			"name": "Ketchup Heinz",
+			"itens": 2,
+			"price": 10.90
+		},
+		{
+			"name": "Macarrão Italiano",
+			"itens": 6,
+			"price": 13.90
+		}
+	],
+	"productsRetailer": [
+		{
+			"name": "Refrigerante Kuat Guaraná",
+			"itens": 12,
+			"price": 5.49
+		},
+		{
+			"name": "Açucar União Cristal",
+			"itens": 10,
+			"price": 3.43
+		},
+		{
+			"name": "Sal Lebre 1kg",
+			"itens": 10,
+			"price": 1.79
+		}
+	],
+	"status": [
+		{
+			"description": "Pedido realizado",
+			"date": "02/04/2020 15:04"
+		},
+		{
+			"description": "Pedido cancelado",
+			"date": "05/04/2020 07:50"
+		}
+	],
+	"statusGeneral": "CANCELADO"
+}
