@@ -75,7 +75,7 @@ Nesta tela o varejista poderá verificar os produtos do atacadista no pedido e a
   <tr>
     <td align="center">
       <a href="https://www.linkedin.com/in/thalysonrodrigues/">
-        <img src="./docs/collaborators/thalyson.jpeg" width="100px;" alt="Izabella Melo"/>
+        <img src="./docs/collaborators/thalyson.jpeg" width="100px;" alt="Thalyson Rodrigues"/>
         <br/>
         <sub><b>Thalyson Rodrigues</b></sub><br>
         <sub>Dev. backend</sub>
@@ -83,7 +83,7 @@ Nesta tela o varejista poderá verificar os produtos do atacadista no pedido e a
     </td>
     <td align="center">
       <a href="https://www.linkedin.com/in/jo%C3%A3o-kleber-g-448481bb/">
-        <img src="./docs/collaborators/joao.jpeg" width="100px;" alt="Izabella Melo"/>
+        <img src="./docs/collaborators/joao.jpeg" width="100px;" alt="João Kléber"/>
         <br/>
         <sub><b>João Kléber</b></sub><br>
         <sub>Dev. frontend</sub>
@@ -91,15 +91,23 @@ Nesta tela o varejista poderá verificar os produtos do atacadista no pedido e a
     </td>
     <td align="center">
       <a href="https://www.linkedin.com/in/manuela-luz-862797180/">
-        <img src="./docs/collaborators/manu.jpeg" width="100px;" alt="Izabella Melo"/>
+        <img src="./docs/collaborators/manu.jpeg" width="100px;" alt="Manuela Luz"/>
         <br/>
         <sub><b>Manuela Luz</b></sub><br>
         <sub>UX|Design/Marketing</sub>
       </a>
     </td>
     <td align="center">
+      <a href="https://www.linkedin.com/in/victorlinsgomes/">
+        <img src="./docs/collaborators/victor.jpeg" width="100px;" alt="Victor Lins"/>
+        <br/>
+        <sub><b>Victor Lins</b></sub><br>
+        <sub>UX|Design</sub>
+      </a>
+    </td>
+    <td align="center">
       <a href="https://www.linkedin.com/in/paulo-victor-moreira-matehus-641b9514b/">
-        <img src="./docs/collaborators/paulo.jpeg" width="100px;" alt="Izabella Melo"/>
+        <img src="./docs/collaborators/paulo.jpeg" width="100px;" alt="Paulo Victor"/>
         <br/>
         <sub><b>Paulo Victor</b></sub><br>
         <sub>Business</sub>
